@@ -176,9 +176,10 @@ export default class ReduxnotificationCenter extends Component {
 
                             <div className={cn('r-notification', {active: this.state.showNotificationMessage})}>
                                 <Header>{this.state.current && this.state.current[this.mapOptions().title]}</Header>
+                                console.log('this.state.current', this.state.current)
+                                console.log('this.mapOptions()', this.mapOptions())
                                 <Content {...this.props}>
-                                    <div className="desc">
-                                        {this.state.current && <div dangerouslySetInnerHTML={{__html: this.state.current[this.mapOptions().message] }}/> }
+                                    <div className="desc" dangerouslySetInnerHTML={{__html: this.state.current ? this.state.current[this.mapOptions().message] : null }}>
                                     </div>
                                 </Content>
                                 <Footer>
