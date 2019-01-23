@@ -28,9 +28,7 @@ export default class NotificationContent extends Component {
 
     render() {
         return (
-            <div className="rn-content" ref="rrContent">
-                {this.props.children}
-            </div>
+            <div className="rn-content" ref="rrContent" dangerouslySetInnerHTML={{__html: this.props.children}} />
         );
     }
 }
