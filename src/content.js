@@ -29,7 +29,7 @@ export default class NotificationContent extends Component {
     render() {
         return (
             <div className="rn-content" ref="rrContent">
-                <div dangerouslySetInnerHTML={{__html: this.props.children}}/>
+                {this.props.children}
             </div>
         );
     }
