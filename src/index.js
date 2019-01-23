@@ -178,7 +178,7 @@ export default class ReduxnotificationCenter extends Component {
                                 <Header>{this.state.current && this.state.current[this.mapOptions().title]}</Header>
                                 <Content {...this.props}>
                                     <div className="desc">
-                                        {this.state.current && this.state.current[this.mapOptions().message]}
+                                        {this.state.current && <div dangerouslySetInnerHTML={{__html: this.state.current[this.mapOptions().message }}/> }
                                     </div>
                                 </Content>
                                 <Footer>
