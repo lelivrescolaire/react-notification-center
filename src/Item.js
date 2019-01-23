@@ -26,7 +26,7 @@ export default class NotificationItem extends Component {
                 <p className="short-desc">
                     {this.props.tags && this.props.tags.map((item, i) => <Tag key={i} {...item}>{item.text}</Tag>)}
                     {this.props[this.props.options.title] && <strong className="title">{this.props[this.props.options.title]} </strong>}
-                    {this.props[this.props.options.message] && cutString(this.props[this.props.options.message], 50)}
+                    {this.props[this.props.options.message] && <div dangerouslySetInnerHTML={{__html: cutString(this.props[this.props.options.message], 50)}} />}
                     {this.props[this.props.options.date] && <small className="date">{this.props[this.props.options.date]}</small>}
                 </p>
             </li>
