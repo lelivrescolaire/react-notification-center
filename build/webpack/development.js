@@ -1,16 +1,14 @@
-'use strict';
-
-var path = require('path');
-var config = require('../../config');
-var baseConfig = require('./base');
+const path = require('path')
+const config = require('../../config')
+const baseConfig = require('./base')
 
 baseConfig.entry.app = [
   'webpack-dev-server/client?http://localhost:' + config.server_port,
   'webpack/hot/only-dev-server',
   config.path_base + '/' + config.dir_client + '/client.js'
-];
+]
 
-baseConfig.devtool = 'inline-source-map';
+baseConfig.devtool = 'inline-source-map'
 
 baseConfig.devServer = {
   headers: {
@@ -26,6 +24,6 @@ baseConfig.devServer = {
     colors: true
   },
   historyApiFallback: true
-};
+}
 
-module.exports = baseConfig;
+module.exports = baseConfig

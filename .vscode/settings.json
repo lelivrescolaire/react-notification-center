@@ -1,0 +1,15 @@
+{
+  "eslint.run": "onSave",
+  "eslint.enable": true,
+  "eslint.packageManager": "npm",
+  "eslint.options": {
+    "configFile": "./node_modules/@lls/lls-scripts/config/.eslintrc.js"
+  },
+  "eslint.autoFixOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

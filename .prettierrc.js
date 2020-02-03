@@ -1,0 +1,1 @@
+module.exports = require('@lls/lls-scripts/config/.prettierrc.json')
