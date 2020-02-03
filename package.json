@@ -49,7 +49,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/diegoddox/react-notification-center"
+    "url": "https://github.com/lelivrescolaire/react-notification-center"
   },
   "bugs": {
     "url": "https://github.com/diegoddox/react-notification-center/issues"
@@ -73,21 +73,18 @@
     "changelog"
   ],
   "devDependencies": {
-    "@babel/cli": "7.8.4",
+    "@babel/cli": "7.6.0",
     "@lls/babel": "2.6.0",
     "@lls/lls-scripts": "0.13.4",
     "babel-eslint": "10.0.3",
     "babel-loader": "8.0.6",
     "better-npm-run": "0.1.1",
     "chance": "^1.0.1",
-    "concurrently": "5.1.0",
     "css-loader": "3.4.2",
     "eslint": "6.8.0",
     "eslint-loader": "3.0.3",
     "eslint-plugin-react": "7.18.3",
     "html-webpack-plugin": "3.2.0",
-    "jshint": "^2.9.1-rc1",
-    "jshint-loader": "^0.8.3",
     "less": "3.10.3",
     "less-loader": "5.0.0",
     "less-plugin-autoprefix": "2.0.0",
