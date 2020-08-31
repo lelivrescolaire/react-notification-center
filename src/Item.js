@@ -6,11 +6,6 @@ import { cutString } from './utils'
 export default class NotificationItem extends Component {
   static displayName = 'NotificationItemComponent'
 
-  static propTypes = {
-    onClick: PropTypes.func,
-    tags: PropTypes.array
-  }
-
   constructor(props) {
     super(props)
   }

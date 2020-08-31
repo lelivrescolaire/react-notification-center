@@ -7,7 +7,5 @@ const NotificationHeader = props => (
 )
 
 NotificationHeader.displayName = 'NotificationHeader'
-NotificationHeader.proptypes = {
-  children: React.PropTypes.node.isRequired
-}
+
 export default NotificationHeader

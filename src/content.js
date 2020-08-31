@@ -36,6 +36,3 @@ export default class NotificationContent extends Component {
 }
 
 NotificationContent.displayName = 'NotificationContent'
-NotificationContent.proptypes = {
-  children: React.PropTypes.node.isRequired
-}

@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import cn from 'classnames'
 import elementClass from 'element-class'
 import NotificationItem from './Item'
@@ -9,19 +9,6 @@ import { cutString } from './utils'
 
 export default class ReduxnotificationCenter extends Component {
   static displayName = 'ReduxNotofication'
-
-  static propTypes = {
-    notifications: PropTypes.array,
-    mapToItem: PropTypes.object,
-    onItemClick: PropTypes.func,
-    customItemComponent: PropTypes.func,
-    onNotificationOpen: PropTypes.func,
-    onNotificationClose: PropTypes.func,
-    onScrollBottom: PropTypes.func,
-    position: PropTypes.string,
-    wordsInItem: PropTypes.number,
-    noNotificationText: PropTypes.string
-  }
 
   static defaultProps = {
     notificationTitle: 'React notification center',
