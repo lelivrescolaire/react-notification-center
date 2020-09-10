@@ -74,7 +74,7 @@
   ],
   "devDependencies": {
     "@babel/cli": "7.6.0",
-    "@lls/babel": "2.6.0",
+    "@lls/babel": "7.11.4",
     "@lls/lls-scripts": "0.13.4",
     "babel-eslint": "10.0.3",
     "babel-loader": "8.0.6",
